@@ -13,6 +13,8 @@ physicsClient = p.connect(p.GUI)
 #Disable sidebard
 p.configureDebugVisualizer(p.COV_ENABLE_GUI,1)
 
+p.loadSDF("box.sdf")
+
 for index in range(1000):
     time.sleep(1/60)
     p.stepSimulation()
