@@ -10,9 +10,10 @@ import time
 
 #Create physics object
 physicsClient = p.connect(p.GUI)
-#Disable sidebard
+#Enable sidebard
 p.configureDebugVisualizer(p.COV_ENABLE_GUI,1)
 
+#Load box into world
 p.loadSDF("box.sdf")
 
 for index in range(1000):
